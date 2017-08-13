@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.example.jamesking.choice.Security_Settings">
+
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/back" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/backButton"
+        android:text="@string/proceed" />
+
+    <TextView
+        android:id="@+id/vID1TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/voterID1"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/vID1OutputTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/vID1TextView"
+        android:text="@string/placeholder"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/vID2TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/vID1OutputTextView"
+        android:text="@string/voterID2"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/vID2OutputTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/vID2TextView"
+        android:text="@string/placeholder"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/vID3TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/vID2OutputTextView"
+        android:text="@string/voterID3"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/vID3OutputTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vID3TextView"
+        android:layout_centerHorizontal="true"
+        android:text="@string/placeholder"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/sq1Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/sq1TextView" />
+
+    <TextView
+        android:id="@+id/sq1TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sq1"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_below="@+id/vID3OutputTextView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/sq1AnswerEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_below="@+id/answerTextView"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/sq2TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sq2"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_below="@+id/sq1Spinner"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:id="@+id/sq2Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sq2TextView"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/sq2AnswerEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignTop="@+id/a2TextView"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/answerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/sq2Spinner"
+        android:text="@string/answer"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:layout_alignStart="@+id/sq1AnswerEditText" />
+
+    <TextView
+        android:id="@+id/a1TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/answer1"
+        android:textSize="15sp"
+        android:layout_alignTop="@+id/sq1AnswerEditText"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/a2TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/answer2"
+        android:textAlignment="center"
+        android:layout_below="@+id/sq1AnswerEditText"
+        android:layout_alignEnd="@+id/a1TextView"
+        android:layout_marginTop="19dp" />
+
+</RelativeLayout>

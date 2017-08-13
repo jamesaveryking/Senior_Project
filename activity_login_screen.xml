@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.example.jamesking.choice.Login_Screen">
+
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:text="@string/welcome"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/toCreateUserButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_account"
+        android:layout_below="@+id/welcomeTextView"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:text="@string/username"
+        android:layout_above="@+id/usernameEditText"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/passwordTextView"
+        android:layout_alignStart="@+id/passwordEditText" />
+
+    <TextView
+        android:id="@+id/passwordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_above="@+id/passwordEditText"
+        android:layout_alignStart="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_above="@+id/loginButton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/forgotPasswordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/request_password"
+        android:layout_below="@+id/toCreateUserButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
