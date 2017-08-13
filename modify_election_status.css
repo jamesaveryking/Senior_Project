@@ -1,0 +1,29 @@
+div.Title{text-align:center;}
+
+h1 {color: white;
+	font-size: 60px;}	
+	
+h2 {color: gold;}
+
+h3 {color: white;}
+
+button{
+	background-color:gold;
+	color: white;
+	font-size: 20px;
+	}
+button:hover{
+	background-color:white;
+	color: gold;
+	font-size: 20px;
+	}
+	
+input[type=submit]{
+	background-color:gold;
+	color:white;
+}
+input[type=submit]:hover{
+	background-color:white;
+	color:gold;
+}
+
